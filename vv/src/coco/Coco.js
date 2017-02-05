@@ -3,6 +3,9 @@ coco.Coco=function(){
 	var s = this;
 	F2xContainer.call(s);
 	s.initUI();
+	s.look.addEventListener("onMouseUp",function (e) {
+		alert("ssss");
+	})
 };
 F2xExtend(coco.Coco,F2xContainer);
 coco.Coco.prototype.initUI=function(){
